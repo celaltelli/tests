@@ -1,5 +1,6 @@
 package com.tellioglu.landmarkbookjava;
 
+//test
 public class Singleton {
     private Lendmark sentLendmark;
     private Singleton() {
