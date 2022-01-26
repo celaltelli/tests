@@ -13,15 +13,17 @@ import com.tellioglu.landmarkbookjava.databinding.RecyclerRowBinding;
 
 import java.util.ArrayList;
 
-public class LandmarkAdapter  extends RecyclerView.Adapter<LandmarkAdapter.LandmarkHolder> {
+public class LandmarkAdapter extends RecyclerView.Adapter<LandmarkAdapter.LandmarkHolder> {
     ArrayList<Lendmark> lendmarkArrayList;
-    public LandmarkAdapter(ArrayList<Lendmark> lendmarkArrayList){
+
+    public LandmarkAdapter(ArrayList<Lendmark> lendmarkArrayList) {
         this.lendmarkArrayList = lendmarkArrayList;
     }
+
     @NonNull
     @Override
     public LandmarkHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        RecyclerRowBinding recyclerRowBinding = RecyclerRowBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false);
+        RecyclerRowBinding recyclerRowBinding = RecyclerRowBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
         return new LandmarkHolder(recyclerRowBinding);
     }
 
@@ -31,7 +33,7 @@ public class LandmarkAdapter  extends RecyclerView.Adapter<LandmarkAdapter.Landm
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(holder.itemView.getContext(),DetailsActivity.class);
+                Intent intent = new Intent(holder.itemView.getContext(), DetailsActivity.class);
 //                intent.putExtra("lendmark",lendmarkArrayList.get(position));
                 Singleton singleton = Singleton.getInstance();
                 singleton.setSentLendmark(lendmarkArrayList.get(position));
@@ -45,12 +47,13 @@ public class LandmarkAdapter  extends RecyclerView.Adapter<LandmarkAdapter.Landm
         return lendmarkArrayList.size();
     }
 
-    public class LandmarkHolder extends  RecyclerView.ViewHolder{
+    public class LandmarkHolder extends RecyclerView.ViewHolder {
 
         RecyclerRowBinding binding;
+
         public LandmarkHolder(RecyclerRowBinding binding) {
             super(binding.getRoot());
-            this.binding =binding;
+            this.binding = binding;
         }
     }
 }
