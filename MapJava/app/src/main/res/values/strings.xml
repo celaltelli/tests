@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MapJava</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="apikey">AIzaSyDNNkoI0mVV6O-eB_OVNMJV5KDetuxiJaQ</string>
+</resources>
