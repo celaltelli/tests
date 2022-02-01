@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "244865538480",
+    "project_id": "shareimage-6840c",
+    "storage_bucket": "shareimage-6840c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244865538480:android:22d60cb0652849497a5e75",
+        "android_client_info": {
+          "package_name": "com.tellioglu.shareimagejava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "244865538480-eieq9v0c75gsdtqk2buakg7ia30disj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk8xrNT4iQ04s_PkmII4J2Ed6nwzupIT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "244865538480-eieq9v0c75gsdtqk2buakg7ia30disj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
